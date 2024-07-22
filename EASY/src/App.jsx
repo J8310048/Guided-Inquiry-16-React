@@ -21,8 +21,8 @@ class Counter extends Component {
     return (
       <div>
         <h1>Your Favorite Number is: {this.state.count}</h1>
-        <button onClick={this.increase}>👿</button>
-        <button onClick={this.decrease}>😈</button>
+        <button onClick={this.increase}>Add if you dare 👿</button>
+        <button onClick={this.decrease}>Subtract if you dare 😈</button>
       </div>
     );
   }
