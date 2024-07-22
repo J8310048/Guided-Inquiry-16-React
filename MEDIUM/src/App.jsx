@@ -27,7 +27,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <div className="w-full h-screen bg-blue-950 text-white">
           <Routes>
             <Route
               path="/"

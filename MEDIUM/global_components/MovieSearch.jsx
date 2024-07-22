@@ -19,8 +19,9 @@ class MovieSearch extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmission}>
+      <form onSubmit={this.handleSubmission} className="flex justify-center">
         <input
+          className="border-2 border-solid border-black text-black"
           type="text"
           value={this.state.searchResults}
           onChange={this.handleChange}

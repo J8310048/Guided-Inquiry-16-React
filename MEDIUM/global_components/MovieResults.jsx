@@ -6,8 +6,10 @@ class MovieResults extends Component {
     const { movies } = this.props;
     return (
       <div>
-        <h1>Here are your Results!</h1>
-        <ul>
+        <h1 className="text-white text-center font-mono">
+          Here are your Results!
+        </h1>
+        <ul className="flex flex-auto text-white text-center font-mono phonemin:grid grid-flow-row grid-cols-10 mx-0 relative">
           {movies && movies.length > 0 ? (
             movies.map((movie) => (
               <li key={movie.id}>

@@ -34,15 +34,17 @@ class MovieDetails extends Component {
       return <div>Loading...</div>;
     }
     return (
-      <div>
-        <img
-          src={`https://image.tmdb.org/t/p/w440_and_h660_face${movie.poster_path}`}
-          alt={movie.title}
-        />
-        <h1>{movie.title}</h1>
-        <p>{movie.overview}</p>
-        <p>{movie.release_date}</p>
-      </div>
+      <html className="w-full h-screen bg-blue-950 text-white">
+        <div className="flex flex-col items-center ml-96 mr-96">
+          <img
+            src={`https://image.tmdb.org/t/p/w440_and_h660_face${movie.poster_path}`}
+            alt={movie.title}
+          />
+          <h1>{movie.title}</h1>
+          <p>{movie.overview}</p>
+          <p>{movie.release_date}</p>
+        </div>
+      </html>
     );
   }
 }
