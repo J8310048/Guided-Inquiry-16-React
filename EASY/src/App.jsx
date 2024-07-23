@@ -19,10 +19,22 @@ class Counter extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Your Favorite Number is: {this.state.count}</h1>
-        <button onClick={this.increase}>Add if you dare 👿</button>
-        <button onClick={this.decrease}>Subtract if you dare 😈</button>
+      <div className="flex flex-col text-center items-center">
+        <h1 className="font-bold">
+          Your Favorite Number is: {this.state.count}
+        </h1>
+        <button
+          onClick={this.increase}
+          className="border-black border-2 border-solid size-20"
+        >
+          Add if you dare 👿
+        </button>
+        <button
+          onClick={this.decrease}
+          className="border-black border-2 border-solid size-20"
+        >
+          Subtract if you dare 😈
+        </button>
       </div>
     );
   }
